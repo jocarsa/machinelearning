@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            window.onload = function(){
+                var contexto = document.getElementById("lienzo").getContext("2d");
+                let imagen = new Image();
+                imagen.src = "mano.jpg";
+                imagen.onload = function(){
+                    contexto.drawImage(imagen,0,0);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <canvas width=512 height=512 id="lienzo"></canvas>
+        
+    </body>
+</html>
